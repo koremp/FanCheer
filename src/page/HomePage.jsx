@@ -1,11 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import { useHistory } from 'react-router-dom';
+
+import HomeContainer from '../container/HomeContainer';
 
 export default function HomePage() {
+  const history = useHistory();
+
+  function handleClickLink(url) {
+    history.push(url);
+  }
+
   return (
-    <div>
-      HomePage
-      <Link to="/select-song">select song</Link>
-    </div>
+    <HomeContainer
+      handleClickLink={handleClickLink}
+    />
   );
 }
