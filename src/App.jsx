@@ -8,7 +8,7 @@ import {
 import HomePage from './page/HomePage';
 import AboutPage from './page/AboutPage'
 import MembersPage from './page/MembersPage'
-import MemberPage from './page/MemberPage'
+import MemberDetailPage from './page/MemberDetailPage'
 import SelectSongPage from './page/SelectSongPage';
 import SongPage from './page/SongPage';
 import NotFoundPage from './page/NotFoundPage';
@@ -22,7 +22,7 @@ export default function App() {
         <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
         <Route exact path="/member" component={MembersPage} />
-        <Route path="/member/:id" component={MemberPage} />
+        <Route path="/member/:id" component={MemberDetailPage} />
         <Route path="/select-song" component={SelectSongPage} />
         <Route path="/song/:id" component={SongPage} />
         <Route component={NotFoundPage} />
