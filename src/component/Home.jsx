@@ -15,19 +15,25 @@ const Container = styled.div({
   justifyContent: 'space-around',
   backgroundImage: `linear-gradient(
     60deg,
-    black,
-    pink
+    #E11900,
+    #7E00BF
   )`,
 });
 
 export default function Home({
+  handleClickAbout,
+  handleClickMembers,
   handleClickSelectSong,
+  handleClickContributors,
 }) {
   return (
     <Container>
       <HomeTitle />
       <HomeButtons
+        handleClickAbout={handleClickAbout}
+        handleClickMembers={handleClickMembers}
         handleClickSelectSong={handleClickSelectSong}
+        handleClickContributors={handleClickContributors}
       />
     </Container>
   );
