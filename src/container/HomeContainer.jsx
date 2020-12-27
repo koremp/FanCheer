@@ -1,24 +1,31 @@
 import React from 'react';
 
-import { useDispatch } from 'react-redux';
-
-import { loadInitialData } from '../slice';
-
 import Home from '../component/Home';
 
-export default function HomeContainer({
-  handleClickLink,
-}) {
-  const dispatch = useDispatch();
+export default function HomeContainer({ handleClickLink }) {
+
+  function handleClickAbout() {
+    handleClickLink('/about');
+  }
+
+  function handleClickMembers() {
+    handleClickLink('/member');
+  }
 
   function handleClickSelectSong() {
-    dispatch(loadInitialData());
     handleClickLink('/select-song');
+  }
+
+  function handleClickContributors() {
+    handleClickLink('/contributors');
   }
 
   return (
     <Home
+      handleClickAbout={handleClickAbout}
+      handleClickMembers={handleClickMembers}
       handleClickSelectSong={handleClickSelectSong}
+      handleClickContributors={handleClickContributors}
     />
   );
 }
