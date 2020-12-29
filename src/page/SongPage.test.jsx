@@ -6,6 +6,8 @@ import { render } from '@testing-library/react';
 
 import SongPage from './SongPage';
 
+jest.mock('../assets/images');
+
 test('SongPage', () => {
   const { getByText } = render((
     <MemoryRouter>
