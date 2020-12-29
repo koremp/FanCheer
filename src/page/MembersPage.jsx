@@ -10,8 +10,6 @@ import Container from '../styles/members';
 
 import members from '../data/members';
 
-jest.mock('../assets/images');
-
 export default function MembersPage() {
   const history = useHistory();
 
