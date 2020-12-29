@@ -1,5 +1,3 @@
-import { equal } from './utils';
-
 const initialState = {
 
 };

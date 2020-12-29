@@ -6,9 +6,9 @@ import {
 } from 'react-router-dom';
 
 import HomePage from './page/HomePage';
-import AboutPage from './page/AboutPage'
-import MembersPage from './page/MembersPage'
-import MemberDetailPage from './page/MemberDetailPage'
+import AboutPage from './page/AboutPage';
+import MembersPage from './page/MembersPage';
+import MemberDetailPage from './page/MemberDetailPage';
 import SelectSongPage from './page/SelectSongPage';
 import SongPage from './page/SongPage';
 import NotFoundPage from './page/NotFoundPage';

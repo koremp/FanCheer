@@ -84,7 +84,7 @@ export default function HomeButtons({
   handleClickAbout,
   handleClickSelectSong,
   handleClickMembers,
-  handleClickContributors
+  handleClickContributors,
 }) {
   return (
     <Container>
@@ -108,6 +108,6 @@ export default function HomeButtons({
       >
         Contributors
       </ContributorsButton>
-    </Container >
+    </Container>
   );
 }

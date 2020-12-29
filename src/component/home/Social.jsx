@@ -6,12 +6,10 @@ import { socialImages } from '../../assets/images';
 
 const SocialLogo = styled.img({
 
-})
+});
 
-export default function Social({ social }) {
+export default function Social() {
   return (
-    <SocialLogo
-      src={socialImages[id]}
-    />
+    <SocialLogo />
   );
 }

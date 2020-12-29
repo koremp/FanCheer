@@ -8,7 +8,7 @@ const members = [
     color: 'white',
     roles: ['Main Vocal'],
     birthday: '1997-01-31',
-    description: ''
+    description: '',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const members = [
     color: 'white',
     roles: ['Main Vocal'],
     birthday: '1997-10-23',
-    description: ''
+    description: '',
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const members = [
     color: 'white',
     roles: ['Main Dancer', 'Sub Vocal'],
     birthday: '1998-03-09',
-    description: ''
+    description: '',
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const members = [
     color: 'white',
     roles: ['Leader', 'Main Rapper'],
     birthday: '1998-08-26',
-    description: ''
+    description: '',
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const members = [
     color: 'white',
     roles: ['Lead Dancer', 'Sub Vocal'],
     birthday: '1999-09-23',
-    description: ''
+    description: '',
   },
   {
     id: 6,
@@ -63,8 +63,8 @@ const members = [
     color: 'black',
     roles: ['Sub Vocal'],
     birthday: '2000-01-06',
-    description: ''
+    description: '',
   },
-]
+];
 
 export default members;

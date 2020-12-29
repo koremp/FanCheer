@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 
-import { GidleLogoImage } from '../../assets/images'
+import { GidleLogoImage } from '../../assets/images';
 
 const Container = styled.div({
   display: 'flex',
@@ -31,8 +31,8 @@ export default function HomeTitle() {
         alt="(G)I-DLE Logo Image"
       />
       <Text>(G)-IDLE</Text>
+      <Text>(여자)아이들</Text>
       <Text>Fan Page</Text>
-      <Text>Made by koremp</Text>
     </Container>
   );
 }
