@@ -23,11 +23,9 @@ jobs:
       run: |
         npm run build
         cp dist/index.html dist/404.html
-    - name: Deploy  
-      if: github.ref == 'refs/heads/main'
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+    
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BASE_BRANCH: main
-        BRANCH: gh-pages
-        FOLDER: dist
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
