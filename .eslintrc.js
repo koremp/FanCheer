@@ -15,12 +15,13 @@ module.exports = {
     Feature: 'readonly',
     Scenario: 'readonly',
     actor: 'readonly',
+    given: 'readonly',
   },
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
+    ecmaVersion: 11,
     sourceType: 'module',
   },
   plugins: [
@@ -30,6 +31,7 @@ module.exports = {
     indent: ['error', 2],
     'no-trailing-spaces': 'error',
     curly: 'error',
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     'brace-style': 'error',
     'no-multi-spaces': 'error',
     'space-infix-ops': 'error',
@@ -50,5 +52,7 @@ module.exports = {
     'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }],
     'react/prop-types': 'off',
     'linebreak-style': 'off',
+    'no-proto': 'off',
+    'no-unused-vars': 'off',
   },
 };

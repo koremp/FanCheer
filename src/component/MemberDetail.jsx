@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 import { membersImages } from '../assets/images';
 
@@ -9,16 +9,16 @@ const Container = styled.div({
 });
 
 const Name = styled.div({
-  alignContent: 'center'
-})
+  alignContent: 'center',
+});
 
 const ProfileImage = styled.img({
   display: 'block',
   height: '15em',
   margin: '1em',
   border: 0,
-  boxShadow: '0 5px 5px -5px rgba(0,0,0,.5)'
-})
+  boxShadow: '0 5px 5px -5px rgba(0,0,0,.5)',
+});
 
 const Role = styled.div({
 
@@ -37,7 +37,7 @@ export default function MemberDetail({ member }) {
     color,
     roles,
     birthday,
-    description
+    description,
   } = member;
 
   return (
@@ -46,7 +46,12 @@ export default function MemberDetail({ member }) {
         src={membersImages[id]}
         alt=""
       />
-      <Name>{korName}({engName})</Name>
+      <Name>
+        {korName}
+        (
+        {engName}
+        )
+      </Name>
       {
         roles.map((role) => (
           <Role>
@@ -55,5 +60,5 @@ export default function MemberDetail({ member }) {
         ))
       }
     </Container>
-  )
+  );
 }

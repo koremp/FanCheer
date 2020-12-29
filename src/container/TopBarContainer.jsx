@@ -23,15 +23,18 @@ const Container = styled.div({
   },
   '&:hover': {
     transition: '.5s',
-    backgroundColor: '#580085'
+    backgroundColor: '#580085',
   },
 });
 
+const LogoImage = styled.img({
+
+});
 
 export default function TopBarContainer({ handleClick }) {
   return (
     <Container>
-      <img
+      <LogoImage
         src={GidleLogoImage}
         alt="(G)I-DLE Logo Image"
         onClick={() => handleClick('/')}

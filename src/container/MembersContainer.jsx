@@ -1,10 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import Member from '../component/members/Member'
+import Member from '../component/members/Member';
 
-import MembersLayout from '../styles/members-container'
-
-
+import MembersLayout from '../styles/members-container';
 
 export default function MembersContainer({ members, handleClick }) {
   return (
@@ -19,5 +17,5 @@ export default function MembersContainer({ members, handleClick }) {
         ))
       }
     </MembersLayout>
-  )
+  );
 }
