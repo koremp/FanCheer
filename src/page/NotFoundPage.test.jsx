@@ -14,6 +14,4 @@ test('NotFoundPage', () => {
       <NotFoundPage />
     </MemoryRouter>
   ));
-
-  expect(getByText(/NotFoundPage/)).not.toBeNull();
 });
