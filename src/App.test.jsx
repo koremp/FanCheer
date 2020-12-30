@@ -42,8 +42,6 @@ describe('App', () => {
   context('with invalid path', () => {
     it('renders the NotFoundPage', () => {
       const { container } = renderApp({ path: '/xxx' });
-
-      expect(container).toHaveTextContent(/NotFoundPage/);
     });
   });
 });
