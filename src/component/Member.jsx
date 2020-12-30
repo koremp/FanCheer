@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 
-import { membersImages } from '../../assets/images';
+import { membersImages } from '../assets/images';
 
 const Container = styled.div(
   {
@@ -64,7 +64,7 @@ export default function Member({ member, handleClick }) {
     >
       <ProfileImage
         src={membersImages[id]}
-        alt=""
+        alt={korName}
       />
       <Name>
         {korName}
