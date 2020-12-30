@@ -44,7 +44,7 @@ export default function MemberDetail({ member }) {
     <Container>
       <ProfileImage
         src={membersImages[id]}
-        alt=""
+        alt={korName}
       />
       <Name>
         {korName}
