@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Member from '../component/members/Member';
+import Member from '../component/Member';
 
 import MembersLayout from '../styles/members-container';
 
