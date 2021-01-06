@@ -2,13 +2,15 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 
-import { membersImages } from '../assets/images';
+import { membersImages } from '../../assets/images';
 
 const Container = styled.div(
   {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    height: '15em',
+    width: '12em',
     margin: '1em',
     padding: '1em',
     borderRadius: '.5em',
