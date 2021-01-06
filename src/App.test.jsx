@@ -18,30 +18,22 @@ describe('App', () => {
   }
 
   context('with path /', () => {
-    it('renders the HomePage', () => {
+    it('renders HomePage', () => {
       const { container } = renderApp({ path: '/' });
+
+      expect(container).toHaveTextContent(/About/);
+      expect(container).toHaveTextContent(/Member/);
+      expect(container).toHaveTextContent(/Album/);
+      expect(container).toHaveTextContent(/Cheer Song List/);
     });
   });
 
-  context('with path /select-song', () => {
-    it('renders the SelectSongPage', () => {
-      const { container } = renderApp({ path: '/select-song' });
-    });
-  });
+  context('with path /cheer-song', () => {
+    it('renders CheerSongListPage', () => {
+      const { container } = renderApp({ path: '/cheer-song' });
 
-  /*
-  context('with path /song/:id', () => {
-    it('renders the SongPage', () => {
-      const { container } = renderApp({ path: '/song/:id' });
-
-      expect(container).toHaveTextContent('');
-    });
-  });
-  */
-
-  context('with invalid path', () => {
-    it('renders the NotFoundPage', () => {
-      const { container } = renderApp({ path: '/xxx' });
+      expect(container).toHaveTextContent(/응원할 곡을 선택하세요/);
+      expect(container).toHaveTextContent(/볼드체 부분을 따라 외치세요/);
     });
   });
 });
