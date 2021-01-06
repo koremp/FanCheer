@@ -4,14 +4,14 @@ import { MemoryRouter } from 'react-router-dom';
 
 import { render } from '@testing-library/react';
 
-import SelectSongPage from './SelectSongPage';
+import ContributorsPage from './ContributorsPage';
 
 jest.mock('../assets/images');
 
-test('SelectSongPage', () => {
+test('ContributorsPage', () => {
   const { getByText } = render((
     <MemoryRouter>
-      <SelectSongPage />
+      <ContributorsPage />
     </MemoryRouter>
   ));
 });
