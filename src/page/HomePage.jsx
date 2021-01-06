@@ -2,6 +2,9 @@ import React from 'react';
 
 import { useHistory } from 'react-router-dom';
 
+import { HomeLayout } from '../styles/page';
+
+import CountDownContainer from '../container/CountDownContainer';
 import HomeContainer from '../container/HomeContainer';
 
 export default function HomePage() {
@@ -12,8 +15,11 @@ export default function HomePage() {
   }
 
   return (
-    <HomeContainer
-      handleClickLink={handleClickLink}
-    />
+    <HomeLayout>
+      <CountDownContainer handleClickLink={handleClickLink} />
+      <HomeContainer
+        handleClickLink={handleClickLink}
+      />
+    </HomeLayout>
   );
 }
