@@ -1,4 +1,4 @@
-import { get, equal } from './utils';
+import { get, equal, zeroPad } from './utils';
 
 test('get', () => {
   const state = {
@@ -22,4 +22,13 @@ test('equal', () => {
 
   expect(f(state)).toBeTruthy();
   expect(g(state)).toBeFalsy();
+});
+
+test('zeroPad', () => {
+  const number = 3;
+  const base = 10;
+
+  const result = zeroPad(number, base);
+
+  expect(result).toEqual('03');
 });
