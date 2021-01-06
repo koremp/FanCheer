@@ -7,10 +7,12 @@ import {
 
 import HomePage from './page/HomePage';
 import AboutPage from './page/AboutPage';
-import MembersPage from './page/MembersPage';
+import MemberListPage from './page/MemberListPage';
 import MemberDetailPage from './page/MemberDetailPage';
-import SelectSongPage from './page/SelectSongPage';
+import CheerSongListPage from './page/CheerSongListPage';
+import SongListPage from './page/SongListPage';
 import SongPage from './page/SongPage';
+import AlbumListPage from './page/AlbumListPage';
 import NotFoundPage from './page/NotFoundPage';
 
 import Root from './styles/root';
@@ -21,10 +23,12 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
-        <Route exact path="/member" component={MembersPage} />
+        <Route exact path="/member" component={MemberListPage} />
         <Route path="/member/:id" component={MemberDetailPage} />
-        <Route path="/select-song" component={SelectSongPage} />
+        <Route path="/cheer-song" component={CheerSongListPage} />
+        <Route exact path="/song" component={SongListPage} />
         <Route path="/song/:id" component={SongPage} />
+        <Route path="/album" component={AlbumListPage} />
         <Route component={NotFoundPage} />
       </Switch>
     </Root>
