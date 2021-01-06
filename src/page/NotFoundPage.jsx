@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useHistory } from 'react-router-dom';
 
-import BackToHomeButton from '../component/members/BackToHomeButton';
+import BackToHomeButton from '../component/BackToHomeButton';
 
 export default function NotFoundPage() {
   const history = useHistory();
