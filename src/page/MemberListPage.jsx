@@ -3,14 +3,13 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 import TopBarContainer from '../container/TopBarContainer';
-import MembersContainer from '../container/MembersContainer';
-import BackToHomeButton from '../component/members/BackToHomeButton';
+import MemberListContainer from '../container/MemberListContainer';
 
-import Container from '../styles/members';
+import { FullContainer } from '../styles/page';
 
-import members from '../data/members';
+import members from '../../fixtures/members';
 
-export default function MembersPage() {
+export default function MemberListPage() {
   const history = useHistory();
 
   function handleClick(url) {
@@ -18,17 +17,14 @@ export default function MembersPage() {
   }
 
   return (
-    <Container>
+    <FullContainer>
       <TopBarContainer
         handleClick={handleClick}
       />
-      <MembersContainer
+      <MemberListContainer
         members={members}
         handleClick={handleClick}
       />
-      <BackToHomeButton
-        onClick={handleClick}
-      />
-    </Container>
+    </FullContainer>
   );
 }

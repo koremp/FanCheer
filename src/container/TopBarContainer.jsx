@@ -33,11 +33,12 @@ const LogoImage = styled.img({
 
 export default function TopBarContainer({ handleClick }) {
   return (
-    <Container>
+    <Container
+      onClick={() => handleClick('/')}
+    >
       <LogoImage
         src={GidleLogoImage}
-        alt="(G)I-DLE Logo Image"
-        onClick={() => handleClick('/')}
+        alt="To HomePage"
       />
     </Container>
   );

@@ -7,9 +7,9 @@ import MemberDetailContainer from '../container/MemberDetailContainer';
 
 import BackToMemberButton from '../component/memberDetail/BackToMemberButton';
 
-import Container from '../styles/member';
+import { FullContainer } from '../styles/page';
 
-import members from '../data/members';
+import members from '../../fixtures/members';
 
 export default function MemberDetailPage({ match }) {
   const history = useHistory();
@@ -23,7 +23,7 @@ export default function MemberDetailPage({ match }) {
   const member = members.find((_) => _.id === parseInt(id, 10));
 
   return (
-    <Container>
+    <FullContainer>
       <TopBarContainer
         handleClick={handleClick}
       />
@@ -33,6 +33,6 @@ export default function MemberDetailPage({ match }) {
       <BackToMemberButton
         onClick={handleClick}
       />
-    </Container>
+    </FullContainer>
   );
 }

@@ -11,20 +11,25 @@ export default function HomeContainer({ handleClickLink }) {
     handleClickLink('/member');
   }
 
-  function handleClickSelectSong() {
-    handleClickLink('/select-song');
+  function handleClickSongList() {
+    handleClickLink('/song');
   }
 
-  function handleClickContributors() {
-    handleClickLink('/contributors');
+  function handleClickCheerSongList() {
+    handleClickLink('/cheer-song');
+  }
+
+  function handleClickAlbum() {
+    handleClickLink('/album');
   }
 
   return (
     <Home
       handleClickAbout={handleClickAbout}
       handleClickMembers={handleClickMembers}
-      handleClickSelectSong={handleClickSelectSong}
-      handleClickContributors={handleClickContributors}
+      handleClickSongList={handleClickSongList}
+      handleClickCheerSongList={handleClickCheerSongList}
+      handleClickAlbum={handleClickAlbum}
     />
   );
 }

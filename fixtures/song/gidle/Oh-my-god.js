@@ -1,0 +1,9 @@
+const OhmygodData = {
+  name: 'Oh my god',
+  color: 'a1242c',
+  fontColor: '',
+  url: 'https://youtube.com/embed/iG6KRfUE_hs',
+  lyric: '눈부신 하늘에 시선을 가린 채<br>네 품 안에 안기네<br>흐르는 음악에 정신을 뺏긴 채<br>그대로 빨려 드네 <strong>(Oh god)</strong><br>Help me help me<br>숨이 멎을 것 같이 <strong>(멎을 것 같이)</strong> I feel <strong>(아이들)</strong><br>Set me free set me free<br>녹아 버릴 것 같이 <strong>(녹을 것 같이)</strong> So sick <strong>(오마갓)</strong><br><br>쉴 틈 없이 <strong>빠져들고</strong> 이리저리 <strong>갖고 놀고</strong><br>이성을 깨부수고 제멋대로 들어오지<br>위험하니 <strong>갖고 싶고</strong> 아픔까지 <strong>안고 싶고</strong><br>결국 너를 품으니 난<br><br>Oh my god <strong>(Oh god)</strong> She took me to the sky<br>Oh my god <strong>(Oh god)</strong> She showed me all the stars<br><br>Babe babe 달려들 것만 같이 <strong>(다칠 것 같이)</strong> Come in<br>Make me make me<br>정신 나갈 것 같이 <strong>(미친 것 같이)</strong> Like it<br><br>Oh god 어찌 저에게<br>이런 시험을 줬나요 Is it a call from hell<br>Can’t stop 대체 어떻게<br>그녀를 빠져나갈까요<br>당신이 준 절제는<br>어두운 블랙홀 속 <strong>갈기갈기</strong><br>찢겨져 혼이 나간 채로 그저 <strong>어리버리</strong><br>통제가 불가능해 설탕 뿌린 <strong>마약같이</strong><br>이게 죄라면 벌이라도 아주 <strong>달게 받지</strong><br><br>미친 듯이 <strong>아름답고</strong> 다시 보니 <strong>악마 같고</strong><br>이성을 쏙 빼놓고 제멋대로 들어오지<br>불꽃처럼 <strong>강렬하고</strong> 데일만큼 <strong>사랑하고</strong><br>결국 너를 품으니 난<br><br>Oh my god <strong>(Oh god)</strong> She took me to the sky<br>Oh my god <strong>(Oh god)</strong> She showed me all the stars<br><br>짙은 보랏빛 향길 온몸에 <strong>물들이고</strong><br>높고 넓은 하늘의 저 끝까지 <strong>퍼트리네</strong><br>짙은 붉은색 사랑을 얼굴에 <strong>새기고</strong><br>그 누가 뭐라 해도 Fall in love <strong>(함성)</strong><br><br>Oh my god <strong>(Oh god)</strong> She took me to the sky<br>Oh my god <strong>(Oh god)</strong> She showed me all the stars<br><br>눈부신 하늘에 시선을 가린 채<br>네 품 안에 안기네<br>흐르는 음악에 정신을 뺏긴 채<br>그대로 빨려 드네 <strong>(함성)</strong>',
+};
+
+export default OhmygodData;

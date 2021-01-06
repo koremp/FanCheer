@@ -7,10 +7,10 @@ import HomeButtons from './home/HomeButtons';
 
 const Container = styled.div({
   display: 'flex',
+  flexDirection: 'column',
   width: '100%',
   height: '100%',
   padding: '2em',
-  flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'space-around',
   backgroundImage: `linear-gradient(
@@ -18,13 +18,15 @@ const Container = styled.div({
     #E11900,
     #7E00BF
   )`,
+  backgroundAttachment: 'fixed',
 });
 
 export default function Home({
   handleClickAbout,
   handleClickMembers,
-  handleClickSelectSong,
-  handleClickContributors,
+  handleClickCheerSongList,
+  handleClickSongList,
+  handleClickAlbum,
 }) {
   return (
     <Container>
@@ -32,8 +34,9 @@ export default function Home({
       <HomeButtons
         handleClickAbout={handleClickAbout}
         handleClickMembers={handleClickMembers}
-        handleClickSelectSong={handleClickSelectSong}
-        handleClickContributors={handleClickContributors}
+        handleClickCheerSongList={handleClickCheerSongList}
+        handleClickSongList={handleClickSongList}
+        handleClickAlbum={handleClickAlbum}
       />
     </Container>
   );

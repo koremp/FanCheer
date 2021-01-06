@@ -8,61 +8,7 @@ const Container = styled.div({
   width: '100%',
 });
 
-const AboutButton = styled.button({
-  height: '3em',
-  width: '100%',
-  border: 0,
-  borderRadius: '2em',
-  fontWeight: 'bold',
-  padding: '.4em 1.4em',
-  margin: '1em 0',
-  backgroundColor: '#FFF',
-  alignItems: 'center',
-  outline: 'none',
-  boxShadow: '0 5px 5px -5px rgba(0,0,0,.5)',
-  '&:hover': {
-    transition: '.5s',
-    boxShadow: '0 15px 15px -15px rgba(0,0,0,.5)',
-  },
-});
-
-const SelectSongButton = styled.button({
-  height: '3em',
-  width: '100%',
-  border: 0,
-  borderRadius: '2em',
-  fontWeight: 'bold',
-  padding: '.4em 1.4em',
-  margin: '1em 0',
-  backgroundColor: '#FFF',
-  alignItems: 'center',
-  outline: 'none',
-  boxShadow: '0 5px 5px -5px rgba(0,0,0,.5)',
-  '&:hover': {
-    transition: '.5s',
-    boxShadow: '0 15px 15px -15px rgba(0,0,0,.5)',
-  },
-});
-
-const MembersButton = styled.button({
-  height: '3em',
-  width: '100%',
-  border: 0,
-  borderRadius: '2em',
-  fontWeight: 'bold',
-  padding: '.4em 1.4em',
-  margin: '1em 0',
-  backgroundColor: '#FFF',
-  alignItems: 'center',
-  outline: 'none',
-  boxShadow: '0 5px 5px -5px rgba(0,0,0,.5)',
-  '&:hover': {
-    transition: '.5s',
-    boxShadow: '0 15px 15px -15px rgba(0,0,0,.5)',
-  },
-});
-
-const ContributorsButton = styled.button({
+const Button = styled.button({
   height: '3em',
   width: '100%',
   border: 0,
@@ -82,32 +28,38 @@ const ContributorsButton = styled.button({
 
 export default function HomeButtons({
   handleClickAbout,
-  handleClickSelectSong,
+  handleClickCheerSongList,
+  handleClickSongList,
   handleClickMembers,
-  handleClickContributors,
+  handleClickAlbum,
 }) {
   return (
     <Container>
-      <AboutButton
+      <Button
         onClick={handleClickAbout}
       >
         About
-      </AboutButton>
-      <MembersButton
+      </Button>
+      <Button
         onClick={handleClickMembers}
       >
         Member
-      </MembersButton>
-      <SelectSongButton
-        onClick={handleClickSelectSong}
+      </Button>
+      <Button
+        onClick={handleClickAlbum}
+      >
+        to Album
+      </Button>
+      <Button
+        onClick={handleClickSongList}
       >
         Songs
-      </SelectSongButton>
-      <ContributorsButton
-        onClick={handleClickContributors}
+      </Button>
+      <Button
+        onClick={handleClickCheerSongList}
       >
-        Contributors
-      </ContributorsButton>
+        Cheer Song List
+      </Button>
     </Container>
   );
 }

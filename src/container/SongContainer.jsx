@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function HomeContainer() {
+import Song from '../component/Song';
+
+export default function SongContainer({ song, handleClick }) {
   return (
-    <div>
-      Home
-    </div>
+    <Song song={song} handleClick={handleClick} />
   );
 }
