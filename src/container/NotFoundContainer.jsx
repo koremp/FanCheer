@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function HomeContainer() {
+export default function NotFoundContainer() {
   return (
     <div>
-      Home
+      404NotFound
     </div>
   );
 }
