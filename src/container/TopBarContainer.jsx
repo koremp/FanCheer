@@ -38,7 +38,7 @@ export default function TopBarContainer({ handleClick }) {
     >
       <LogoImage
         src={GidleLogoImage}
-        alt="To HomePage"
+        alt="To Homepage"
       />
     </Container>
   );
