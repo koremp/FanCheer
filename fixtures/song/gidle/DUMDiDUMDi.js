@@ -1,5 +1,5 @@
 const DumdidumdiData = {
-  name: '',
+  name: 'DUMDi DUMDi',
   color: '#FFCC03',
   fontColor: '#fc4800',
   url: 'https://youtube.com/embed/DPykR20ZxAo',
