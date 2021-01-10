@@ -6,14 +6,14 @@ import LionData from './song/gidle/Lion';
 import OhmygodData from './song/gidle/Oh-my-god';
 import DumdidumdiData from './song/gidle/DUMDiDUMDi';
 
-const songList = {
-  1: LatataData,
-  2: HannData,
-  3: SenoritaData,
-  4: UhohData,
-  5: LionData,
-  6: OhmygodData,
-  7: DumdidumdiData,
-};
+const songList = [
+  LatataData,
+  HannData,
+  SenoritaData,
+  UhohData,
+  LionData,
+  OhmygodData,
+  DumdidumdiData,
+];
 
 export default songList;

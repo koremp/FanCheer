@@ -2,14 +2,17 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 
-import { membersImages } from '../../assets/images';
+import {
+  membersImages,
+  nationImages,
+} from '../../assets/images';
 
 const Container = styled.div(
   {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    height: '15em',
+    height: '18em',
     width: '12em',
     margin: '1em',
     padding: '1em',
@@ -32,12 +35,18 @@ const Name = styled.div({
 
 const ProfileImage = styled.img({
   display: 'block',
-  width: '6em',
-  height: '6em',
-  margin: '1em',
+  width: '7em',
+  height: '7em',
+  margin: '.7em',
   border: 0,
   borderRadius: '50%',
   boxShadow: '0 5px 5px -5px rgba(0,0,0,.5)',
+});
+
+const NationImage = styled.img({
+  display: 'block',
+  width: '1em',
+  margin: '.4em',
 });
 
 const Role = styled.div({
@@ -50,7 +59,16 @@ const Description = styled.div({
 
 export default function Member({ member, handleClick }) {
   const {
-    id, korName, engName, backgroundColor, overBackgroundColor, color, roles, birthday, description,
+    id,
+    korName,
+    engName,
+    country,
+    backgroundColor,
+    overBackgroundColor,
+    color,
+    roles,
+    birthday,
+    description,
   } = member;
 
   function handleClickMember() {
@@ -74,6 +92,11 @@ export default function Member({ member, handleClick }) {
         {engName}
         )
       </Name>
+      <NationImage
+        src={nationImages[country]}
+        alt={country}
+      />
+      <p>{birthday}</p>
       {
         roles.map((role) => (
           <Role>

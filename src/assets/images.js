@@ -29,14 +29,20 @@ import ImthetrendImage from './images/albums/IMTHETREND.png';
 import ItrustImage from './images/albums/ITRUST.png';
 import UhohImage from './images/albums/Uhoh.png';
 
+import OneImage from './images/albums/One.png';
+import POPSTARSImage from './images/albums/POPSTARS.png';
+import RelayImage from './images/albums/Relay.png';
+import HelpMeImage from './images/albums/HelpMe.png';
 import QueendomPartOneImage from './images/albums/QueendomPt1.png';
 import QueendomFinalImage from './images/albums/QueendomFinal.png';
-
-import KDAPopstarsImage from './images/albums/KDA_POPSTARS.png';
-import KDATheBaddestImage from './images/albums/KDA_THEBADDEST.png';
-import KDAMoreImage from './images/albums/KDA_MORE.png';
+import ALLOUTImage from './images/albums/ALLOUT.png';
 
 import CubeEntImage from './images/ent/cube.png';
+
+import KoreaImage from './images/nation/Korea.png';
+import ThailandImage from './images/nation/Thailand.png';
+import ChinaImage from './images/nation/China.png';
+import TaiwanImage from './images/nation/Taiwan.png';
 
 export {
   GidleLogoImage,
@@ -70,45 +76,50 @@ export const socialImages = {
   cafe: CafeImage,
 };
 
-export const cheerSongImages = {
-  1: IamImage,
-  2: HannImage,
-  3: ImadeImage,
-  4: UhohImage,
-  5: QueendomFinalImage,
-  6: ItrustImage,
-  7: DumdidumdiImage,
-};
+export const cheerSongImages = [
+  IamImage,
+  HannImage,
+  ImadeImage,
+  UhohImage,
+  QueendomFinalImage,
+  ItrustImage,
+  DumdidumdiImage,
+];
 
 export const korMiniAlbumImages = {
-  1: IamImage,
-  2: ImadeImage,
-  3: ItrustImage,
-  4: IburnImage,
+  'I am': IamImage,
+  'I made': ImadeImage,
+  'I trust': ItrustImage,
+  'I burn': IburnImage,
 };
 
 export const korSingleImages = {
-  1: DumdidumdiImage,
+  'DUMDi DUMDi': DumdidumdiImage,
 };
 
 export const korDigitalSingleImages = {
-  1: HannImage,
-  2: UhohImage,
-  3: ImthetrendImage,
+  '한(一)': HannImage,
+  'Uh-Oh': UhohImage,
+  'i\'M THE TREND': ImthetrendImage,
 };
 
 export const etcAlbumImages = {
-  QueenDom: {
-    1: QueendomPartOneImage,
-    2: QueendomFinalImage,
-  },
-  KDA: {
-    1: KDAMoreImage,
-    2: KDATheBaddestImage,
-    3: KDAMoreImage,
-  },
+  1: OneImage,
+  2: POPSTARSImage,
+  3: RelayImage,
+  4: HelpMeImage,
+  5: QueendomPartOneImage,
+  6: QueendomFinalImage,
+  7: ALLOUTImage,
 };
 
 export const entImages = {
   cube: CubeEntImage,
+};
+
+export const nationImages = {
+  Korea: KoreaImage,
+  Thailand: ThailandImage,
+  China: ChinaImage,
+  Taiwan: TaiwanImage,
 };

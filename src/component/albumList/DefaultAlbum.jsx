@@ -1,10 +1,12 @@
 import React from 'react';
 
 import styled from '@emotion/styled';
+import { cheerSongImages } from '../../assets/images';
 
 const Container = styled.div(
   {
     backgroundColor: 'white',
+    width: '13em',
     margin: '.5em',
     borderRadius: '1em',
     color: 'white',
@@ -18,11 +20,11 @@ const Container = styled.div(
 const AlbumImage = styled.img({
   display: 'block',
   height: '10em',
-  margin: '1em',
+  margin: 'auto',
 });
 
 const AlbumName = styled.p({
-  marginTop: '.5em',
+  margin: '.5em',
   fontSize: '1.5em',
 });
 
@@ -30,11 +32,7 @@ const ReleaseDate = styled.p({
   margin: '.5em',
 });
 
-const ActSong = styled.p({
-  margin: '.5em',
-});
-
-export default function Album({
+export default function DefaultAlbum({
   backgroundColor,
   color,
   album,
@@ -48,23 +46,13 @@ export default function Album({
       <AlbumName>{album.name}</AlbumName>
       <AlbumImage
         src={image}
+        alt={`${album.name} image`}
       />
       <ReleaseDate>
         발매일 :
         {' '}
         {album.date}
       </ReleaseDate>
-      {
-        album.actSong && (
-          <div>
-            <ActSong>
-              활동곡 :
-              {' '}
-              {album.actSong}
-            </ActSong>
-          </div>
-        )
-      }
     </Container>
   );
 }

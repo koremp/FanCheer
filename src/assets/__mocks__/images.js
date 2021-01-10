@@ -63,17 +63,22 @@ export const korDigitalSingleImages = {
 };
 
 export const etcAlbumImages = {
-  QueenDom: {
-    1: '',
-    2: '',
-  },
-  KDA: {
-    1: '',
-    2: '',
-    3: '',
-  },
+  1: '',
+  2: '',
+  3: '',
+  4: '',
+  5: '',
+  6: '',
+  7: '',
 };
 
 export const entImages = {
   cube: '',
+};
+
+export const nationImages = {
+  Korea: '',
+  Thai: '',
+  China: '',
+  Taiwan: '',
 };
