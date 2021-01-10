@@ -47,7 +47,7 @@ export default function CountDown() {
   return (
     <Container>
       <AlbumImage
-        src={korMiniAlbumImages[4]}
+        src={korMiniAlbumImages['I burn']}
         alt="앨범 이미지"
       />
       <TextContainer>
