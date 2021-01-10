@@ -32,7 +32,7 @@ const TextContainer = styled.div({
 });
 
 export default function CountDown() {
-  const releaseDate = new Date('2021-01-11T18:00:00');
+  const releaseDate = new Date('2021-01-11T09:00:00');
 
   const [date, setDate] = useState(new Date(releaseDate.getTime() - new Date().getTime()));
 
