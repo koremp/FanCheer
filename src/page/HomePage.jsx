@@ -16,7 +16,6 @@ export default function HomePage() {
 
   return (
     <HomeLayout>
-      <CountDownContainer handleClickLink={handleClickLink} />
       <HomeContainer
         handleClickLink={handleClickLink}
       />
