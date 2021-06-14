@@ -4,7 +4,7 @@ import { MemoryRouter } from 'react-router-dom';
 
 import { render } from '@testing-library/react';
 
-import SongPage from './SongPage';
+import SongPage from '../SongPage';
 
 import songList from '../../../fixtures/songList';
 

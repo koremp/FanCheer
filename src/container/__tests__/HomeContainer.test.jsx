@@ -8,7 +8,7 @@ jest.mock('../../assets/images');
 
 test('HomeContainer', () => {
   const handleClickLink = jest.fn();
- 
+
   const { getByAltText } = render((
     <HomeContainer
       handleClickLink={handleClickLink}

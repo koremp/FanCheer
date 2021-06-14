@@ -9,5 +9,5 @@ jest.mock('../../assets/images');
 test('NotFoundContainer', () => {
   const { getByAltText } = render((
     <NotFoundContainer />
-  )); 
+  ));
 });

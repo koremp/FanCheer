@@ -4,7 +4,7 @@ import { MemoryRouter } from 'react-router-dom';
 
 import { render } from '@testing-library/react';
 
-import SongListPage from '../SongListPage'; 
+import SongListPage from '../SongListPage';
 
 jest.mock('../../assets/images');
 

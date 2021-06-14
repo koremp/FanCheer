@@ -11,7 +11,7 @@ import {
   etcAlbums,
 } from '../../../fixtures/album';
 
-jest.mock('../../assets/images'); 
+jest.mock('../../assets/images');
 
 test('AlbumListContainer', () => {
   const handleClick = jest.fn();
