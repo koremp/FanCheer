@@ -1,8 +1,6 @@
 import styled from '@emotion/styled';
 
 const HomeLayout = styled.div({
-  width: '100%',
-  height: '100%',
   backgroundImage: `linear-gradient(
     60deg,
     #E11900,
@@ -12,8 +10,6 @@ const HomeLayout = styled.div({
 });
 
 const FullContainer = styled.div({
-  width: '100%',
-  height: '100%',
   backgroundImage: `linear-gradient(
     60deg,
     #E11900,
@@ -23,7 +19,6 @@ const FullContainer = styled.div({
 });
 
 const OverContainer = styled.div({
-  width: '100%',
   margin: '0',
   backgroundImage: `linear-gradient(
     60deg,
