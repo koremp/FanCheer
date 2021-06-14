@@ -4,7 +4,7 @@ module.exports = {
     'jest-plugin-context/setup',
     './jest.setup',
   ],
-  testRegex: "(/__tests__/.*|(\\.|/)(test))\\.(tsx?|ts?|jsx?|js?)?$",
+  testRegex: '(/__tests__/.*|(\\.|/)(test))\\.(tsx?|ts?|jsx?|js?)?$',
   coverageThreshold: {
     global: {
       branches: 100,
