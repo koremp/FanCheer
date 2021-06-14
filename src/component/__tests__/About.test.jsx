@@ -2,10 +2,10 @@ import React from 'react';
 
 import { render, fireEvent } from '@testing-library/react';
 
-import About from './About';
+import About from '../About';
 
-import about from '../../fixtures/about';
-import members from '../../fixtures/members';
+import about from '../../../fixtures/about';
+import members from '../../../fixtures/members';
 
 jest.mock('../assets/images');
 

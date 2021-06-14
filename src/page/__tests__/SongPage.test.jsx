@@ -6,9 +6,9 @@ import { render } from '@testing-library/react';
 
 import SongPage from './SongPage';
 
-import songList from '../../fixtures/songList';
+import songList from '../../../fixtures/songList';
 
-jest.mock('../assets/images');
+jest.mock('../../assets/images');
 
 test('SongPage', () => {
   const { getByText } = render((

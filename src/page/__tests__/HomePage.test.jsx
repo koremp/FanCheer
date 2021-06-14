@@ -4,11 +4,11 @@ import { render, fireEvent } from '@testing-library/react';
 
 import { MemoryRouter } from 'react-router-dom';
 
-import HomePage from './HomePage';
+import HomePage from '../HomePage';
 
 const mockPush = jest.fn();
 
-jest.mock('../assets/images');
+jest.mock('../../assets/images');
 
 jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),

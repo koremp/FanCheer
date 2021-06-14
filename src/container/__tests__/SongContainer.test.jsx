@@ -2,11 +2,11 @@ import React from 'react';
 
 import { render, fireEvent } from '@testing-library/react';
 
-import SongContainer from './SongContainer';
+import SongContainer from '../SongContainer';
 
-import songList from '../../fixtures/songList';
+import songList from '../../../fixtures/songList';
 
-jest.mock('../assets/images');
+jest.mock('../../assets/images');
 
 test('SongContainer', () => {
   const handleClick = jest.fn();

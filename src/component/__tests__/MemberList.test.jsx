@@ -2,11 +2,11 @@ import React from 'react';
 
 import { fireEvent, render } from '@testing-library/react';
 
-import MemberList from './MemberList';
+import MemberList from '../MemberList';
 
-import members from '../../fixtures/members';
+import members from '../../../fixtures/members';
 
-jest.mock('../assets/images');
+jest.mock('../../assets/images');
 
 describe('MemberList', () => {
   const handleClick = jest.fn();

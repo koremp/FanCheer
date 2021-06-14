@@ -2,9 +2,9 @@ import React from 'react';
 
 import { render, fireEvent } from '@testing-library/react';
 
-import TopBarContainer from './TopBarContainer';
+import TopBarContainer from '../TopBarContainer';
 
-jest.mock('../assets/images');
+jest.mock('../../assets/images');
 
 test('TopBarContainer', () => {
   const handleClick = jest.fn();

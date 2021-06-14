@@ -2,9 +2,9 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
-import CountDown from './CountDown';
+import CountDown from '../CountDown';
 
-jest.mock('../assets/images');
+jest.mock('../../assets/images');
 
 test('CountDown', () => {
   const { getByText } = render((

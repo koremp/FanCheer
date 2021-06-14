@@ -4,9 +4,9 @@ import { render } from '@testing-library/react';
 
 import { MemoryRouter } from 'react-router-dom';
 
-import App from './App';
+import App from '../App';
 
-jest.mock('./assets/images');
+jest.mock('../assets/images');
 
 describe('App', () => {
   function renderApp({ path }) {

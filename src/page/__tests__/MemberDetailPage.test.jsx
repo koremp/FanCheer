@@ -4,11 +4,11 @@ import { MemoryRouter } from 'react-router-dom';
 
 import { render } from '@testing-library/react';
 
-import MemberDetailPage from './MemberDetailPage';
+import MemberDetailPage from '../MemberDetailPage';
 
-import members from '../../fixtures/members';
+import members from '../../../fixtures/members';
 
-jest.mock('../assets/images');
+jest.mock('../../assets/images');
 
 describe('MemberDetailPage', () => {
   context('with params', () => {

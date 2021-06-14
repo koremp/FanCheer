@@ -2,9 +2,9 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
-import MemberDetail from './MemberDetail';
+import MemberDetail from '../MemberDetail';
 
-import members from '../../fixtures/members';
+import members from '../../../fixtures/members';
 
 jest.mock('../assets/images');
 

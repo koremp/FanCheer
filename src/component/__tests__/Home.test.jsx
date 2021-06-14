@@ -2,9 +2,9 @@ import React from 'react';
 
 import { fireEvent, render } from '@testing-library/react';
 
-import Home from './Home';
+import Home from '../Home';
 
-jest.mock('../assets/images');
+jest.mock('../../assets/images');
 
 describe('Home', () => {
   const handleClickAbout = jest.fn();

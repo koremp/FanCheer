@@ -2,16 +2,16 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
-import AlbumList from './AlbumList';
+import AlbumList from '../AlbumList';
 
 import {
   korMiniAlbums,
   korSingles,
   korDigitalSingles,
   etcAlbums,
-} from '../../fixtures/album';
+} from '../../../fixtures/album';
 
-jest.mock('../assets/images');
+jest.mock('../../assets/images');
 
 test('AlbumList', () => {
   const handleClick = jest.fn();
