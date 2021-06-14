@@ -9,24 +9,24 @@ jobs:
     strategy:
       matrix:
         node-version: [12.x]
-    
+
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
-    - name: Install dependencies
-      run: npm ci
-    - name: Lint
-      run: npx eslint --ext .js,.jsx src
-    - name: Run unit tests
-      run: npm run test:unit
-    - name: Build
-      run: |
-        npm run build
-        cp dist/index.html dist/404.html
-    
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
-        CNAME: fancheer.me 
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint
+        run: npx eslint --ext .js,.jsx src
+      # - name: Run unit tests
+      #   run: npm run test:unit
+      - name: Build
+        run: |
+          npm run build
+          cp dist/index.html dist/404.html
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          CNAME: fancheer.me
