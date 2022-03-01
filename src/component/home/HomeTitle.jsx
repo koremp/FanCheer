@@ -13,7 +13,7 @@ const Container = styled.div({
 });
 
 const Logo = styled.img({
-  height: '10em',
+  height: '13em',
   maxWidth: '100%',
   margin: '1em auto',
 });
