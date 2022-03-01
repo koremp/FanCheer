@@ -4,7 +4,6 @@ import { useHistory } from 'react-router-dom';
 
 import { HomeLayout } from '../styles/page';
 
-import CountDownContainer from '../container/CountDownContainer';
 import HomeContainer from '../container/HomeContainer';
 
 export default function HomePage() {
