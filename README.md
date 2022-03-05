@@ -6,9 +6,11 @@ Online cheering service for k-pop fans
 
 ## 소개
 
-COVID-19로 인해 콘서트 및 팬미팅 등의 활동을 참여할 수 없는 K-POP 팬들을 위한 온라인 응원 서비스입니다.
-
-현재 (여자)-아이들 페이지를 구현하고 있습니다.
+* 2020.12 ~ 2021.2 / 이후 조금씩 작업중
+* (여자)아이들의 팬페이지
+* 멤버 소개, 앨범 소개, 응원법 안내 등의 페이지를 구현
+* JavaScript, React.js, Webpack, emotion, GitHub Actions, gh-pages, Jest, etc
+* TDD로 개발
 
 ## 사용법
 
