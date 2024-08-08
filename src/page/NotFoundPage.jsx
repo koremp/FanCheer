@@ -13,7 +13,7 @@ export default function NotFoundPage() {
 
   return (
     <div>
-      asdf
+      Not Found
       <BackToHomeButton
         onClick={handleClick}
       />
