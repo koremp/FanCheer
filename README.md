@@ -1,4 +1,4 @@
-# Fancheer
+# FancCheer
 
 Fancy한 Cheering, FanCheer
 
