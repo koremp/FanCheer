@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import TopBarContainer from '../container/TopBarContainer';
 import SongContainer from '../container/SongContainer';
@@ -11,7 +11,7 @@ import { OverContainer } from '../styles/page';
 import songList from '../../fixtures/songList';
 
 export default function SongPage({ match }) {
-  const history = useHistory();
+  const history = useNavigate();
 
   function handleClick(url) {
     history.push(url);

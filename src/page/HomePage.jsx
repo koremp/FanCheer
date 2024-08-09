@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import { HomeLayout } from '../styles/page';
 
 import HomeContainer from '../container/HomeContainer';
 
 export default function HomePage() {
-  const history = useHistory();
+  const history = useNavigate();
 
   function handleClickLink(url) {
     history.push(url);

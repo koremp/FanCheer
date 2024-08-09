@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import TopBarContainer from '../container/TopBarContainer';
 import AlbumListContainer from '../container/AlbumListContainer';
@@ -15,7 +15,7 @@ import {
 } from '../../fixtures/album';
 
 export default function AlbumPage() {
-  const history = useHistory();
+  const history = useNavigate();
 
   function handleClick(url) {
     history.push(url);

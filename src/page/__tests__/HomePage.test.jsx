@@ -12,7 +12,7 @@ jest.mock('../../assets/images');
 
 jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),
-  useHistory() {
+  useNavigate() {
     return { push: mockPush };
   },
 }));
