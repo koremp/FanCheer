@@ -1,8 +1,8 @@
 import React from 'react';
 
 import {
+  Routes,
   Route,
-  Switch,
 } from 'react-router-dom';
 
 import HomePage from './page/HomePage';
@@ -20,17 +20,17 @@ import Root from './styles/root';
 export default function App() {
   return (
     <Root>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route exact path="/member" component={MemberListPage} />
-        <Route path="/member/:id" component={MemberDetailPage} />
-        <Route path="/cheer-song" component={CheerSongListPage} />
-        <Route exact path="/song" component={SongListPage} />
-        <Route path="/song/:id" component={SongPage} />
-        <Route path="/album" component={AlbumListPage} />
-        <Route component={NotFoundPage} />
-      </Switch>
+      <Routes>
+        <Route path="/home" element={<HomePage/>} />
+        <Route path="/about" element={<AboutPage/>} />
+        <Route exact path="/member" element={<MemberListPage/>} />
+        <Route path="/member/:id" element={<MemberDetailPage/>} />
+        <Route path="/cheer-song" element={<CheerSongListPage/>} />
+        <Route exact path="/song" element={<SongListPage/>} />
+        <Route path="/song/:id" element={<SongPage/>} />
+        <Route path="/album" element={<AlbumListPage/>} />
+        <Route element={<NotFoundPage/>} />
+      </Routes>
     </Root>
   );
 }
