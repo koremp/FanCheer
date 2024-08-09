@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback --open",
+    "start": "webpack-dev-server --devtool eval-source-map --mode=development --history-api-fallback --open",
     "test:unit": "jest",
     "coverage": "npm run test:unit -- --coverage",
     "test:e2e": "codeceptjs run --steps",
     "test": "npm run test:unit",
     "lint": "eslint --ext js,jsx .",
     "lint:fix": "eslint --fix --ext  js,jsx .",
-    "build": "webpack --config webpack.config.js" 
+    "build:dev": "webpack --mode=development --config webpack.config.js",
+    "build:prod": "webpack --mode=production --config webpack.config.js"
   },
   "homepage": "https://koremp.github.io/fancheer",
   "keywords": [],
