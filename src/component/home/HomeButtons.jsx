@@ -29,37 +29,22 @@ const Button = styled.button({
 export default function HomeButtons({
   handleClickAbout,
   handleClickCheerSongList,
-  handleClickSongList,
   handleClickMembers,
   handleClickAlbum,
 }) {
+  const buttons = [
+    {text: "About", onClick: handleClickAbout},
+    {text: "Member", onClick: handleClickMembers},
+    {text: "Album", onClick: handleClickAlbum},
+    {text: "Cheer Song", onClick: handleClickCheerSongList},
+  ]
   return (
     <Container>
-      <Button
-        onClick={handleClickAbout}
-      >
-        About
-      </Button>
-      <Button
-        onClick={handleClickMembers}
-      >
-        Member
-      </Button>
-      <Button
-        onClick={handleClickAlbum}
-      >
-        to Album
-      </Button>
-      <Button
-        onClick={handleClickSongList}
-      >
-        Songs
-      </Button>
-      <Button
-        onClick={handleClickCheerSongList}
-      >
-        Cheer Song List
-      </Button>
+      {
+        buttons.map(({text, onClick}) =>
+          <Button onClick={onClick}>{text}</Button>
+        )
+      }
     </Container>
   );
 }
