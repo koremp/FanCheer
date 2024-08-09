@@ -59,7 +59,6 @@ const Description = styled.div({
 
 export default function Member({ member, handleClick }) {
   const {
-    id,
     korName,
     engName,
     country,
@@ -71,8 +70,10 @@ export default function Member({ member, handleClick }) {
     description,
   } = member;
 
+  const lower = engName.toLowerCase();
+
   function handleClickMember() {
-    handleClick(`/member/${id}`);
+    handleClick(`/member/${lower}`);
   }
 
   return (
@@ -83,7 +84,7 @@ export default function Member({ member, handleClick }) {
       onClick={handleClickMember}
     >
       <ProfileImage
-        src={membersImages[id]}
+        src={membersImages[lower]}
         alt={korName}
       />
       <Name>

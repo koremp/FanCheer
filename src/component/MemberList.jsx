@@ -8,16 +8,17 @@ import {
 } from '../styles/members-container';
 
 export default function MemberList({ members, handleClick }) {
-  const members1 = members.filter((member) => member.id % 2);
-  const members2 = members.filter((member) => !(member.id % 2));
+  const divNum = Math.ceil(members.length / 2);
+  const first = [...members].slice(0, divNum);
+  const second = [...members].slice(divNum, members.length);
 
   return (
     <MembersRowLayout>
       <MembersColumnLayout>
         {
-          members1.map((member) => (
+          first.map((member) => (
             <Member
-              key={member.id}
+              key={member.engName}
               member={member}
               handleClick={handleClick}
             />
@@ -26,9 +27,9 @@ export default function MemberList({ members, handleClick }) {
       </MembersColumnLayout>
       <MembersColumnLayout>
         {
-          members2.map((member) => (
+          second.map((member) => (
             <Member
-              key={member.id}
+              key={member.engName}
               member={member}
               handleClick={handleClick}
             />

@@ -31,7 +31,6 @@ const GroupImage = styled.img({
 export default function About({ about, members, handleClick }) {
   const {
     name,
-    leader,
     debutDate,
     genres,
     wiki,
