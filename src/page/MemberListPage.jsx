@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import TopBarContainer from '../container/TopBarContainer';
 import MemberListContainer from '../container/MemberListContainer';
 
-import { FullContainer } from '../styles/page';
+import { FullContainer, OverContainer } from '../styles/page';
 
 import members from '../../fixtures/members';
 
@@ -17,7 +17,7 @@ export default function MemberListPage() {
   }
 
   return (
-    <FullContainer>
+    <OverContainer>
       <TopBarContainer
         handleClick={handleClick}
       />
@@ -25,6 +25,6 @@ export default function MemberListPage() {
         members={members}
         handleClick={handleClick}
       />
-    </FullContainer>
+    </OverContainer>
   );
 }

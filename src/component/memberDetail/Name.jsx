@@ -5,7 +5,8 @@ import styled from '@emotion/styled';
 const Container = styled.div({
   display: 'flex',
   flexDirection: 'column',
-  marginTop: '1em',
+  alignItems: 'center',
+  justifyContent: 'center',
 });
 
 const KorName = styled.p({
@@ -19,12 +20,8 @@ const EngName = styled.p({
 export default function Name({ korName, engName }) {
   return (
     <Container>
-      <KorName>
-        {korName}
-      </KorName>
-      <EngName>
-        {engName}
-      </EngName>
+      <KorName>{korName}</KorName>
+      <EngName>{engName}</EngName>
     </Container>
   );
 }

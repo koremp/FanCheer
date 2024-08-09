@@ -26,7 +26,6 @@ export default function Home({
   handleClickAbout,
   handleClickMembers,
   handleClickCheerSongList,
-  handleClickSongList,
   handleClickAlbum,
 }) {
   return (
@@ -36,7 +35,6 @@ export default function Home({
         handleClickAbout={handleClickAbout}
         handleClickMembers={handleClickMembers}
         handleClickCheerSongList={handleClickCheerSongList}
-        handleClickSongList={handleClickSongList}
         handleClickAlbum={handleClickAlbum}
       />
     </Container>

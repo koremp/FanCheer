@@ -5,7 +5,8 @@ import styled from '@emotion/styled';
 const Container = styled.div({
   display: 'flex',
   flexDirection: 'column',
-  marginTop: '1em',
+  alignItems: 'center',
+  margin: '1em auto',
 });
 
 const Role = styled.p({
@@ -15,12 +16,9 @@ const Role = styled.p({
 export default function Roles({ roles }) {
   return (
     <Container>
-      <p>포지션</p>
-      {
+      포지션 : {
         roles.map((role) => (
-          <Role>
-            {role}
-          </Role>
+          <>{role}</>
         ))
       }
     </Container>

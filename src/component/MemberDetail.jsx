@@ -16,8 +16,8 @@ const Container = styled.div({
 
 const ProfileImage = styled.img({
   display: 'block',
-  height: '15em',
-  width: '15em',
+  height: '80%',
+  width: '80%',
   margin: '1em',
   border: 0,
   boxShadow: '0 5px 5px -5px rgba(0,0,0,.5)',
@@ -26,8 +26,9 @@ const ProfileImage = styled.img({
 const TextContainer = styled.div(
   {
     display: 'flex',
-    flexDirection: 'row',
-    width: '60%',
+    flexDirection: 'column',
+    width: '80%',
+    borderRadius: '5px',
   }, (props) => ({
     backgroundColor: props.backgroundColor,
     color: props.color,
@@ -55,7 +56,10 @@ export default function MemberDetail({ member }) {
         src={membersImages[engName.toLowerCase()]}
         alt={korName}
       />
-      <TextContainer backgroundColor={backgroundColor} color={color}>
+      <TextContainer
+        backgroundColor={backgroundColor}
+        color={color}
+      >
         <Name korName={korName} engName={engName} />
         <Birthday birthday={birthday} />
         <Roles roles={roles} />
