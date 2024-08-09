@@ -3,6 +3,7 @@ import React from 'react';
 import {
   Routes,
   Route,
+  Navigate,
 } from 'react-router-dom';
 
 import HomePage from './page/HomePage';
@@ -21,16 +22,17 @@ export default function App() {
   return (
     <Root>
       <Routes>
-        <Route path="/home" element={<HomePage/>} />
-        <Route path="/about" element={<AboutPage/>} />
-        <Route exact path="/member" element={<MemberListPage/>} />
-        <Route path="/member/:name" element={<MemberDetailPage/>} />
-        <Route path="/cheer-song" element={<CheerSongListPage/>} />
-        <Route exact path="/song" element={<SongListPage/>} />
-        <Route path="/song/:id" element={<SongPage/>} />
-        <Route path="/album" element={<AlbumListPage/>} />
+        <Route path='/home' element={<HomePage/>} />
+        <Route path='/about' element={<AboutPage/>} />
+        <Route exact path='/member' element={<MemberListPage/>} />
+        <Route path='/member/:name' element={<MemberDetailPage/>} />
+        <Route path='/cheer-song' element={<CheerSongListPage/>} />
+        <Route path='/album' element={<AlbumListPage/>} />
+        <Route exact path='/album/:songList/' element={<SongListPage/>}/>
+        <Route exact path='/album/:songList/:song' element={<SongPage/>} />
+        <Route path='*' element={<Navigate to='/home' replace/>} />
         <Route element={<NotFoundPage/>} />
-      </Routes>
+     </Routes>
     </Root>
   );
 }
