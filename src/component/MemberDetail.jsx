@@ -12,6 +12,7 @@ const Container = styled.div({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+  marginBottom: '1em'
 });
 
 const ProfileImage = styled.img({
