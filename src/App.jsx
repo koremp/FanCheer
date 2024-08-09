@@ -24,7 +24,7 @@ export default function App() {
         <Route path="/home" element={<HomePage/>} />
         <Route path="/about" element={<AboutPage/>} />
         <Route exact path="/member" element={<MemberListPage/>} />
-        <Route path="/member/:id" element={<MemberDetailPage/>} />
+        <Route path="/member/:name" element={<MemberDetailPage/>} />
         <Route path="/cheer-song" element={<CheerSongListPage/>} />
         <Route exact path="/song" element={<SongListPage/>} />
         <Route path="/song/:id" element={<SongPage/>} />

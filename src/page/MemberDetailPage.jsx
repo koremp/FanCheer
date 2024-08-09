@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 import TopBarContainer from '../container/TopBarContainer';
 import MemberDetailContainer from '../container/MemberDetailContainer';
@@ -11,16 +11,16 @@ import { FullContainer } from '../styles/page';
 
 import members from '../../fixtures/members';
 
-export default function MemberDetailPage({ match }) {
+export default function MemberDetailPage() {
   const nav = useNavigate();
 
   function handleClick(url) {
     nav(url);
   }
 
-  const { id } = match.params;
+  const { name }= useParams()
 
-  const member = members.find((_) => _.id === parseInt(id, 10));
+  const member = members.find((member) => member.engName.toLowerCase() === name);
 
   return (
     <FullContainer>

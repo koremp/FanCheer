@@ -2,13 +2,9 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 
-const Container = styled.div({
-  margin: '0 2em',
-});
-
 const Button = styled.button({
+  margin: 'auto 2em 1em',
   height: '3em',
-  width: '100%',
   border: '2.5px solid #FFF',
   borderRadius: '2em',
   backgroundColor: 'rgba(255, 255, 255, 0.6)',
@@ -23,10 +19,8 @@ const Button = styled.button({
 
 export default function BackToMemberButton({ onClick }) {
   return (
-    <Container>
       <Button onClick={() => onClick('/member')}>
-        Member
+        Back To Member List Page
       </Button>
-    </Container>
   );
 }

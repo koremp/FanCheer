@@ -11,11 +11,7 @@ import Birthday from './memberDetail/Birthday';
 const Container = styled.div({
   display: 'flex',
   flexDirection: 'column',
-});
-
-const ProfileContainer = styled.div({
-  display: 'flex',
-  flexDirection: 'row',
+  alignItems: 'center',
 });
 
 const ProfileImage = styled.img({
@@ -30,9 +26,8 @@ const ProfileImage = styled.img({
 const TextContainer = styled.div(
   {
     display: 'flex',
-    flexDirection: 'column',
-    margin: '1em',
-    padding: '1em',
+    flexDirection: 'row',
+    width: '60%',
   }, (props) => ({
     backgroundColor: props.backgroundColor,
     color: props.color,
@@ -45,29 +40,26 @@ const DescText = styled.p({
 
 export default function MemberDetail({ member }) {
   const {
-    id,
     korName,
     engName,
+    birthday,
+    roles,
+    description,
     backgroundColor,
     color,
-    roles,
-    birthday,
-    description,
-  } = member;
+  } = member
 
   return (
     <Container>
-      <ProfileContainer>
-        <ProfileImage
-          src={membersImages[id]}
-          alt={korName}
-        />
-        <TextContainer backgroundColor={backgroundColor} color={color}>
-          <Name korName={korName} engName={engName} />
-          <Birthday birthday={birthday} />
-          <Roles roles={roles} />
-        </TextContainer>
-      </ProfileContainer>
+      <ProfileImage
+        src={membersImages[engName.toLowerCase()]}
+        alt={korName}
+      />
+      <TextContainer backgroundColor={backgroundColor} color={color}>
+        <Name korName={korName} engName={engName} />
+        <Birthday birthday={birthday} />
+        <Roles roles={roles} />
+      </TextContainer>
       <DescText>{description}</DescText>
     </Container>
   );
