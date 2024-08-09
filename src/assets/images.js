@@ -5,12 +5,12 @@ import GidleGroupImage from './images/group/gidle.png';
 import NamuwikiLogoImage from './images/wiki/Namu.png';
 import WikipediaLogoImage from './images/wiki/Wikipedia.png';
 
-import MiyeonImage from './images/members/MiyeonImage.png';
-import MinnieImage from './images/members/MinnieImage.png';
-import SoojinImage from './images/members/SoojinImage.png';
-import SoyeonImage from './images/members/SoyeonImage.png';
-import YuqiImage from './images/members/YuqiImage.png';
-import ShuhuaImage from './images/members/ShuhuaImage.png';
+import imgMiyeon from './images/members/MiyeonImage.png';
+import imgMinnie from './images/members/MinnieImage.png';
+import imgSoojin from './images/members/SoojinImage.png';
+import imgSoyeon from './images/members/SoyeonImage.png';
+import imgYuqi from './images/members/YuqiImage.png';
+import imgShuhua from './images/members/ShuhuaImage.png';
 
 import HomepageImage from './images/social/Site.png';
 import YoutubeImage from './images/social/Youtube.png';
@@ -58,12 +58,12 @@ export {
 };
 
 export const membersImages = {
-  1: MiyeonImage,
-  2: MinnieImage,
-  3: SoojinImage,
-  4: SoyeonImage,
-  5: YuqiImage,
-  6: ShuhuaImage,
+  miyeon: imgMiyeon,
+  minnie: imgMinnie,
+  soojin: imgSoojin,
+  soyeon: imgSoyeon,
+  yuqi: imgYuqi,
+  shuhua: imgShuhua,
 };
 
 export const socialImages = {
