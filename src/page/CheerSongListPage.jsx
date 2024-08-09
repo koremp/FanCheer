@@ -6,10 +6,10 @@ import TopBarContainer from '../container/TopBarContainer';
 import CheerSongListContainer from '../container/CheerSongListContainer';
 
 export default function CheerSongListPage() {
-  const history = useNavigate();
+  const nav = useNavigate();
 
   function handleClick(url) {
-    history.push(url);
+    nav(url);
   }
 
   return (

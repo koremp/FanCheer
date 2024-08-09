@@ -12,10 +12,10 @@ import { FullContainer } from '../styles/page';
 import members from '../../fixtures/members';
 
 export default function MemberDetailPage({ match }) {
-  const history = useNavigate();
+  const nav = useNavigate();
 
   function handleClick(url) {
-    history.push(url);
+    nav(url);
   }
 
   const { id } = match.params;

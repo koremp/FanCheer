@@ -15,10 +15,10 @@ import {
 } from '../../fixtures/album';
 
 export default function AlbumPage() {
-  const history = useNavigate();
+  const nav = useNavigate();
 
   function handleClick(url) {
-    history.push(url);
+    nav(url);
   }
 
   return (

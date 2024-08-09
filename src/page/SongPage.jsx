@@ -11,10 +11,10 @@ import { OverContainer } from '../styles/page';
 import songList from '../../fixtures/songList';
 
 export default function SongPage({ match }) {
-  const history = useNavigate();
+  const nav = useNavigate();
 
   function handleClick(url) {
-    history.push(url);
+    nav(url);
   }
 
   const { id } = match.params;

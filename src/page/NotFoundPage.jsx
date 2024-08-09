@@ -5,10 +5,10 @@ import { useNavigate } from 'react-router-dom';
 import BackToHomeButton from '../component/BackToHomeButton';
 
 export default function NotFoundPage() {
-  const history = useNavigate();
+  const nav = useNavigate();
 
   function handleClick(url) {
-    history.push(url);
+    nav(url);
   }
 
   return (

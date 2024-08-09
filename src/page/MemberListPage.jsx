@@ -10,10 +10,10 @@ import { FullContainer } from '../styles/page';
 import members from '../../fixtures/members';
 
 export default function MemberListPage() {
-  const history = useNavigate();
+  const nav = useNavigate();
 
   function handleClick(url) {
-    history.push(url);
+    nav(url);
   }
 
   return (

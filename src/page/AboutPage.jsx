@@ -10,10 +10,10 @@ import about from '../../fixtures/about';
 import members from '../../fixtures/members';
 
 export default function AboutPage() {
-  const history = useNavigate();
+  const nav = useNavigate();
 
   function handleClick(url) {
-    history.push(url);
+    nav(url);
   }
 
   return (

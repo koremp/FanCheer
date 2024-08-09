@@ -7,10 +7,10 @@ import { HomeLayout } from '../styles/page';
 import HomeContainer from '../container/HomeContainer';
 
 export default function HomePage() {
-  const history = useNavigate();
+  const nav = useNavigate();
 
   function handleClickLink(url) {
-    history.push(url);
+    nav(url);
   }
 
   return (
