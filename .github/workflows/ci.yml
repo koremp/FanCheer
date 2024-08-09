@@ -8,20 +8,20 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [18.x]
 
     steps:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Install dependencies
-        run: npm ci
+        run: yarn ci
       - name: Lint
-        run: npx eslint --ext .js,.jsx src
+        run: yarn eslint --ext .js,.jsx src
       # - name: Run unit tests
       #   run: npm run test:unit
       - name: Build
         run: |
-          npm run build
+          yarn run build:prod
           cp dist/index.html dist/404.html
 
       - name: Deploy
