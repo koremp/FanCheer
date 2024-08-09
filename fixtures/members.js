@@ -1,6 +1,5 @@
 const members = [
   {
-    id: 1,
     korName: '미연',
     engName: 'Miyeon',
     country: 'Korea',
@@ -12,7 +11,6 @@ const members = [
     description: '',
   },
   {
-    id: 2,
     korName: '민니',
     engName: 'Minnie',
     country: 'Thailand',
