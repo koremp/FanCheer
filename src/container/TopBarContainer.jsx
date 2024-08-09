@@ -34,7 +34,7 @@ const LogoImage = styled.img({
 export default function TopBarContainer({ handleClick }) {
   return (
     <Container
-      onClick={() => handleClick('/')}
+      onClick={() => handleClick('/home')}
     >
       <LogoImage
         src={GidleLogoImage}
