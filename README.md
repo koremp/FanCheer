@@ -12,6 +12,10 @@ Online cheering service for k-pop fans
 * JavaScript, React.js, Webpack, emotion, GitHub Actions, gh-pages, Jest, etc
 * TDD로 개발
 
+### Fix
+
+2024.8 수정하여 재배포
+
 ## 사용법
 
 원하는 가수의 노래를 선택하면 응원법 영상을 보여줍니다. 
