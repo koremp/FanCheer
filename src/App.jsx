@@ -11,7 +11,7 @@ import AboutPage from './page/AboutPage';
 import MemberListPage from './page/MemberListPage';
 import MemberDetailPage from './page/MemberDetailPage';
 import CheerSongListPage from './page/CheerSongListPage';
-import SongListPage from './page/SongListPage';
+import AlbumPage from './page/AlbumPage';
 import SongPage from './page/SongPage';
 import AlbumListPage from './page/AlbumListPage';
 import NotFoundPage from './page/NotFoundPage';
@@ -22,6 +22,7 @@ export default function App() {
   return (
     <Root>
       <Routes>
+        <Route exact path="*" element={<NotFoundPage/>} />
         <Route path='/home' element={<HomePage/>} />
         <Route path='/about' element={<AboutPage/>} />
         <Route exact path='/member' element={<MemberListPage/>} />
@@ -30,8 +31,6 @@ export default function App() {
         <Route path='/album' element={<AlbumListPage/>} />
         <Route exact path='/album/:songList/' element={<SongListPage/>}/>
         <Route exact path='/album/:songList/:song' element={<SongPage/>} />
-        <Route path='*' element={<Navigate to='/home' replace/>} />
-        <Route element={<NotFoundPage/>} />
      </Routes>
     </Root>
   );
