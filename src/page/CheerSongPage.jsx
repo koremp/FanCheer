@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 import TopBarContainer from '../container/TopBarContainer';
 import SongContainer from '../container/SongContainer';
@@ -10,16 +10,16 @@ import { OverContainer } from '../styles/page';
 
 import songList from '../../fixtures/songList';
 
-export default function SongPage({ match }) {
+export default function SongPage() {
   const nav = useNavigate();
 
   function handleClick(url) {
     nav(url);
   }
 
-  const { id } = match.params;
+  const { songName } = useParams();
 
-  const song = songList[parseInt(id, 10)];
+  // const song = songList[parseInt(id, 10)];
 
   return (
     <OverContainer>
