@@ -18,7 +18,7 @@ const app = ReactDOM.createRoot(document.getElementById("app"));
 app.render(
   (
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename='/fancheer'>
         <App />
       </BrowserRouter>
     </Provider>
