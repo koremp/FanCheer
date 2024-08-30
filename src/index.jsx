@@ -15,10 +15,12 @@ import store from './store';
 
 const app = ReactDOM.createRoot(document.getElementById("app"));
 
+const basename = process.env.NODE_ENV === 'production' ? '/my-repo' : '/';
+
 app.render(
   (
     <Provider store={store}>
-      <BrowserRouter basename='/fancheer'>
+      <BrowserRouter basename={basename}>
         <App />
       </BrowserRouter>
     </Provider>
