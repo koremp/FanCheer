@@ -1,6 +1,12 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
@@ -21,12 +27,11 @@ jobs:
       #   run: npm run test:unit
       - name: Build
         run: |
-          yarn deploy
+          yarn build:prod
           cp dist/index.html dist/404.html
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages
+      - name: Deploy to GitHub Pages
+        run: yarn deploy
+
+      - name: Clean up repository
+        run: rm -rf dist
