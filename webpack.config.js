@@ -39,7 +39,7 @@ const production = {
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle-[hash].js',
-    publicPath: 'https://koremp.github.io/fancheer/',
+    publicPath: '/fancheer/',
   },
   module: {
     rules: [
@@ -57,12 +57,9 @@ const production = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
-  devServer: {
-    historyApiFallback: true,
-  },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'index.html'),
+      template: path.resolve(__dirname, './dist/index.html'),
     }),
   ],
 };
