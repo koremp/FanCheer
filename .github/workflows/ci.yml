@@ -30,8 +30,9 @@ jobs:
           yarn build:prod
           cp dist/index.html dist/404.html
 
-      - name: Deploy to GitHub Pages
-        run: yarn deploy
-
-      - name: Clean up repository
-        run: rm -rf dist
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
