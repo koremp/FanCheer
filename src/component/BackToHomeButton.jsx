@@ -24,8 +24,8 @@ const Button = styled.button({
 export default function BackToHomeButton({ onClick }) {
   return (
     <Container>
-      <Button onClick={() => onClick('/')}>
-        Home
+      <Button onClick={() => onClick('/home')}>
+        Back To Home
       </Button>
     </Container>
   );
