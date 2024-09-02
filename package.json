@@ -11,7 +11,7 @@
     "lint": "ESLINT_USE_FLAT_CONFIG=false eslint ./src -c ./.eslintrc.js --ext .js, .jsx",
     "lint:fix": "ESLINT_USE_FLAT_CONFIG=false eslint ./src -c ./.eslintrc.js --fix --ext .js,.jsx",
     "build:dev": "webpack --mode=development --config webpack.config.js",
-    "build:prod": "webpack --mode=production --config webpack.config.js",
+    "build:prod": "webpack --mode=production --config webpack.config.js"
   },
   "homepage": "https://koremp.github.io/fancheer",
   "keywords": [],
