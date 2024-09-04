@@ -17,57 +17,57 @@ const getHTML = async (url) => {
   }
 };
 
-const getRecordLinks = async () => {
-  const recordHTML = await getHTML(BASE_URL);
-  const $ = cheerio.load(recordHTML.data);
-  const records = $('#myc-discography > div > div.section-inner > div');
-  const recordsDiv = cheerio.load(records.html());
-  const anchorItems = recordsDiv('a:has(img)');
+const getAlbumInfo = ($album, item) => {
+  const album = {
+    title: undefined,
+    releaseDate: undefined,
+    albumType: undefined,
+  }
 
-  anchorItems.each((idx, item) => {
-    const album = {
-      title: undefined,
-      releaseDate: undefined,
-      albumType: undefined
-    }
+  const element = $album(item);
 
-    const element = $(item);
+  // title
+  const title = element.find('span.title').text().trim();
+  album.title = title;
 
-    // title
-    album.title = element.find('.title').text().trim();
+  // releaseDate & albumType
+  const categoryText = element.find('span.category').text().trim();
+  const match = categoryText.match(/(\d+\.\d+\.+\d+)/);
 
+  if(match  && match[1]) {
     // releaseDate
-    const categoryText = element.find('span.category').text().trim();
-    const match = categoryText.match(/(\d+\.\d+\.+\d+)/);
-    if(match  && match[1]) {
-      album.releaseDate = match[1];
-      const albumType = categoryText.replace(match[1], '').trim();
-      if(albumType === '') {
-        albumType = ''
-      }
-    }
+    const releaseDate = match[1];
+    album.releaseDate = releaseDate;
 
     // albumType
-    if(categoryText !== match[1]) {
-      album.albumType = ;
+    const albumType = categoryText.replace(releaseDate, '').trim();
+    if(albumType !== '') {
+      album.albumType = albumType;
     }
+  } else {
+    throw new Error('failed to get release date and album type of', album.title);
+  }
 
-    
-
-
-    if(match) {
-      if(match[1]) {
-        album.releaseDate = match[1];
-      }
-      if(match[2]) {
-        album.albumType = match[2];
-      }
-    }
-
-    // console.log(album);
-  });
+  return album;
 };
 
-getRecordLinks().then(async () => {
+const getAlbumInfos = async () => {
+  const albumHTML = await getHTML(BASE_URL);
+  const $ = cheerio.load(albumHTML.data);
+  const albumsDiv = $('#myc-discography > div > div.section-inner > div');
+  const $album = cheerio.load(albumsDiv.html());
+  const anchorItems = $album('a:has(img)');
+
+  const records = [];
+
+  anchorItems.each((idx, item) => {
+    const record = getAlbumInfo($album, item);
+    records.push(record);
+  });
+
+  console.log(records)
+};
+
+getAlbumInfos().then(async () => {
 
 });
