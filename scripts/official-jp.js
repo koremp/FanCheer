@@ -4,8 +4,8 @@ const fs = require('fs')
 const path = require('path')
 
 const BASE_URL = "https://gidle.cubeent.jp/discography/"
-const IMG_DIR= path.join(process.cwd(), 'public', 'album', 'images');
-const JSON_PATH = path.join(process.cwd(), 'public', 'album', 'infos.json');
+const IMG_DIR= path.join(process.cwd(), 'public', 'images', 'album', 'images');
+const JSON_PATH = path.join(process.cwd(), 'public', 'images', 'album', 'infos.json');
 
 const getHTML = async (url) => {
   try {
