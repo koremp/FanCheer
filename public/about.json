@@ -1,0 +1,92 @@
+{
+  "group": {
+    "name": {
+      "kor": "(여자)아이들",
+      "eng": "(G)I-DLE"
+    },
+    "members": [
+      {
+        "name": {
+          "kor": "미연",
+          "eng": "MIYEON"
+        },
+        "birthday": "1997-01-31",
+        "imgPath": "./images/miyeon.png",
+        "sns": {
+          "instagram": "https://www.instagram.com/noodle.zip/"
+        }
+      },
+      {
+        "name": {
+          "kor": "민니",
+          "eng": "MINNIE"
+        },
+        "birthday": "1997-10-23",
+        "imgPath": "./images/minnie.png",
+        "sns": {
+          "instagram": "https://www.instagram.com/min.nicha/",
+          "instagram_film": "https://www.instagram.com/minichamanichin?igshid=YmMyMTA2M2Y%3D"
+        }
+      },
+      {
+        "name": {
+          "kor": "소연",
+          "eng": "SOYEON"
+        },
+        "birthday": "1998-08-26",
+        "imgPath": "./images/soyeon.png",
+        "sns": {
+          "instagram": "https://www.instagram.com/tiny.pretty.j/",
+          "instagram_food": "https://www.instagram.com/tiny.pretty.j.film/"
+        }
+      },
+      {
+        "name": {
+          "kor": "우기",
+          "eng": "YUQI"
+        },
+        "birthday": "1999-09-23",
+        "imgPath": "./images/yuqi.png",
+        "sns": {
+          "instagram": "https://www.instagram.com/yuqisong.923/",
+          "weibo": "https://www.weibo.com/gidleyuqi",
+          "douyin": "https://v.douyin.com/ihVx82bk/",
+          "xiaohongshu": "https://www.xiaohongshu.com/user/profile/5cc10d72000000001200f6b8"
+        }
+      },
+      {
+        "name": {
+          "kor": "슈화",
+          "eng": "SHUHUA"
+        },
+        "birthday": "20000106",
+        "imgPath": "./images/shuhua.png",
+        "sns": {
+          "instagram": "https://www.instagram.com/yeh.shaa_/",
+          "weibo": "https://www.weibo.com/u/6634226106",
+          "xiaohongshu": "https://www.xiaohongshu.com/user/profile/6317310f00000000150167a5"
+        }
+      }
+    ],
+    "debutDate": "2018-05-02",
+    "officialColor": [
+      {"name": "NEON RED", "hex": "#e11900"},
+      {"name": "CHIC VIOLET", "hex": "#7e00bf"}
+    ],
+    "company": "Cube Entertainment",
+    "Distributions": [
+      {"name": "Korea", "company": "Cube Entertainment"},
+      {"name": "Japan", "company": "Cube Entertainment"},
+      {"name": "USA", "company": "Cube Entertainment"},
+      {"name": "China", "company": "Tencent Music Entertainment"}
+    ]
+  },
+  "links": {
+    "homepage": "http://www.cubeent.co.kr/cube_gidle",
+    "youtube": "https://www.youtube.com/channel/UCritGVo7pLJLUS8wEu32vow",
+    "twitter": "https://twitter.com/G_I_DLE",
+    "instagram": "https://www.instagram.com/official_g_i_dle/",
+    "tiktok": "https://www.tiktok.com/@official_gidle",
+    "vlive": "https://www.vlive.tv/channel/CE2621"
+  }
+}
