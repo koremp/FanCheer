@@ -1,0 +1,37 @@
+[
+  {
+    "korName": "미연",
+    "engName": "MIYEON",
+    "country": "Korea",
+    "roles": ["Main Vocal"],
+    "birthday": "1997-01-31"
+  },
+  {
+    "korName": "민니",
+    "engName": "MINNIE",
+    "country": "Thailand",
+    "roles": ["Main Vocal"],
+    "birthday": "1997-10-23"
+  },
+  {
+    "korName": "소연",
+    "engName": "Soyeon",
+    "country": "Korea",
+    "roles": ["Leader", "Main Rapper"],
+    "birthday": "1998-08-26"
+  },
+  {
+    "korName": "우기",
+    "engName": "Yuqi",
+    "country": "China",
+    "roles": ["Lead Dancer", "Sub Vocal"],
+    "birthday": "1999-09-23"
+  },
+  {
+    "korName": "슈화",
+    "engName": "Shuhua",
+    "country": "Taiwan",
+    "roles": ["Sub Vocal"],
+    "birthday": "2000-01-06"
+  }
+]
